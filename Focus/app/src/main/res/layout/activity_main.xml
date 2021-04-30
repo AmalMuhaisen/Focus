@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="90dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="409dp">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/button2"
+            android:background="@drawable/rb"
+            android:onClick="stopChronometer"
+            android:text="STOP"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rb2"
+            android:onClick="startChronometer"
+            android:text="START"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/button5"
+            android:background="@drawable/rb4"
+            android:onClick="resetChronometer"
+            android:textSize="25dp"
+            android:text="reset" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rb5"
+            android:textSize="25dp"
+            android:text="puase" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rb3"
+        android:text="My list"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
